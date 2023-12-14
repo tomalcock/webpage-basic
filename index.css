@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: blue;
+    width: 20rem;
+    height: 30rem;
+    margin: auto;
+    padding-top: 2rem;
+    border-radius: 2rem;
+}
+
+.task {
+    padding-top: 1rem;
+    color: white;
+}
+
+#tasks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
