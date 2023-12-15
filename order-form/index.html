@@ -62,10 +62,13 @@
                 </td>
                 </tr>
                 <tr><td>Mobile: </td>
-                <td><input 
+                <td>
+                    <input 
                     type="text" 
                     id="mobile-number" 
-                    ></td></tr> 
+                    onfocusout="checkmob()"
+                    >
+                </td></tr> 
                 </table>
                 <br>
 
@@ -84,9 +87,9 @@
                     <option value="1">Select Item</option> 
                     <option value="Chicken pizza">Chicken pizza</option> 
                     <option value="Vegetable Pizza">Vegetable Pizza</option> 
-                    <option value="Chicken Kottu">BBQ Pizza</option> 
-                    <option value="Vegetable Kottu">Tom Lacy-Alcock Special Pizza</option> 
-                    <option value="Water Bottle ">Water Bottle </option> 
+                    <option value="BBQ Pizza">BBQ Pizza</option> 
+                    <option value="Tom Lacy-Alcock Special Pizza">Tom Lacy-Alcock Special Pizza</option> 
+                    <option value="Water">Water Bottle </option> 
                     </select>
                     </td> 
                     <td><input 
@@ -104,9 +107,9 @@
                     <option value="1">Select Item</option> 
                     <option value="Chicken pizza">Chicken pizza</option> 
                     <option value="Vegetable Pizza">Vegetable Pizza</option> 
-                    <option value="Chicken Kottu">BBQ Pizza</option>  
-                    <option value="Vegetable Kottu">Tom Lacy-Alcock Special Pizza</option>
-                    <option value="Water Bottle ">Water Bottle </option>  
+                    <option value="BBQ Pizza">BBQ Pizza</option>  
+                    <option value="Tom Lacy-Alcock Special Pizza">Tom Lacy-Alcock Special Pizza</option>
+                    <option value="Water">Water Bottle </option>  
                     </select>
                     </td>
                     <td><input  
@@ -122,9 +125,9 @@
                     <option value="1">Select Item</option> 
                     <option value="Chicken pizza">Chicken pizza</option>  
                     <option value="Vegetable Pizza">Vegetable Pizza</option> 
-                    <option value="Chicken Kottu">BBQ Pizza</option>
-                    <option value="Vegetable Kottu">Tom Lacy-Alcock Special Pizza</option> 
-                    <option value="Water Bottle ">Water Bottle </option> 
+                    <option value="BBQ Pizza">BBQ Pizza</option>
+                    <option value="Tom Lacy-Alcock Special Pizza">Tom Lacy-Alcock Special Pizza</option> 
+                    <option value="Water">Water Bottle </option> 
                     </select>
                     </td>
                     <td><input 
@@ -141,9 +144,9 @@
                     <option value="1">Select Item</option> 
                     <option value="Chicken pizza">Chicken pizza</option>   
                     <option value="Vegetable Pizza">Vegetable Pizza</option> 
-                    <option value="Chicken Kottu">BBQ Pizza</option> 
-                    <option value="Vegetable Kottu">Tom Lacy-Alcock Special Pizza</option> 
-                    <option value="Water Bottle ">Water Bottle </option>   
+                    <option value="BBQ Pizza">BBQ Pizza</option> 
+                    <option value="Tom Lacy-Alcock Special Pizza">Tom Lacy-Alcock Special Pizza</option> 
+                    <option value="Water">Water Bottle </option>   
                     </select>
                     </td>
                     <td><input 
@@ -161,6 +164,7 @@
                         type="submit" 
                         class="button" 
                         value="Create Bill" onclick=createBill()></td>
+                        <button type=button onclick=createBill()>test</button>
                     <td><input 
                         type="reset" 
                         class="button" 
@@ -168,6 +172,7 @@
                     </tr>
                     </table>
                     </form>
+                    <p id="total-bill">Total Bill : </p>
     </div>
 </body>
 </html>
