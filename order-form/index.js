@@ -1,6 +1,6 @@
 function checkmob() {
     const mobileNumber = document.getElementById('mobile-number')
-    const correctNum = /^07[072568][0-9]{7}$/;
+    const correctNum = /07[0-9]{9}/;
     const check = correctNum.test(mobileNumber.value);
     
      if(!check) alert("Mobile Number is Incorrect");
